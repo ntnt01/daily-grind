@@ -11,7 +11,7 @@
 	
         html {background-color:#FF7518;/* pumpkin - overwrites default */}
         
-        .feature {color:#FF7518; /* daily feature color - pumpkin! */}
+        .feature {color:darkorange; /* daily feature color - pumpkin! */}
         
 		.masthead{
 			font-family: 'Holtwood One SC', serif; /* required for google font */
@@ -37,6 +37,11 @@
         h3.slogan{
            font-style:italic; /* make the slogan italics */ 
         }
+
+		h3.more-about{
+           font-style:italic; /* make the slogan italics */
+		   text-align: center; 
+        }
     </style>
    
     <!--[if ltIE9]>
@@ -48,44 +53,46 @@
 	    <img src="images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo" />
 		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
 		<nav>
+			<h2>Specials for other days</h2>
 			<ul>
-				<li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
+				<li><a href ="index.html?day=0">Sunday</a></li>
+				<li><a href ="index.html?day=1">Monday</a></li>
+				<li><a href ="index.html?day=2">Tuesday</a></li>
+				<li><a href ="index.html?day=3">Wednesday</a></li>
+				<li><a href ="index.html?day=4">Thursday</a></li>
+				<li><a href ="index.html?day=5">Friday</a></li>
+				<li><a href ="index.html?day=6">Saturday</a></li>
 			</ul>
 		</nav>
 	</header>
     <main>
 		 <header><h3 class="slogan">You drink our coffee, we make large bucks!</h3></header>
-        <p>
-    		 <img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
-            <strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
-        <p><span class="feature">Pumpkin Spice is </span> Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical.</p>
-        <p><span class="feature">Enjoy Pumpkin Spice with our </span> Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin.</p>
-		 <p>
-		 <b>At LargeBuck$ we aspire to: </b>Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
+		 <div id ="coffee-cup"></div>
+        <!--
+		 	<p>
+				<img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
+				<strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!
+			</p>
 
-		 </p>
-		<p>
-		Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-		</p>
-		<p>
-		Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel put a bird on it master cleanse.
-		</p>
-		<p>
-		Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-		</p>
+		-->
+
+
+			<h3 class="more-about">What our page does:</h3>
+
+<p>
+This webpage dynamically updates content based on the day of the week by using JavaScript date functions and conditional statements. Each weekday is linked to specific coffee offerings, descriptions, and background colors using a switch statement, resulting in a personalized user experience. this demonstrates proficiency in date manipulation, DOM updates, and related skills by dynamically identifying the current day and adjusting the page theme and text both client-side and with each refresh.
+</p>
+
      </main>
 	 <footer>
-		<p><small>&copy; 2022 by 
-			YOUR NAME HERE, All Rights Reserved ~ 
-			<a id="html-checker" href="#">Check HTML</a> ~ 
-			<a id="css-checker" href="#">Check CSS</a></small>
+		<p><small>&copy; 2023 by 
+			Natnael Terefe, All Rights Reserved ~ 
+			<a id="html-checker">Check HTML</a> ~ 
+			<a id="css-checker">Check CSS</a></small>
 	   </p>
 	  </footer>
     <!-- END Footer -->
+	<script src="js/daily-grind.js"></script>
 	<script>
 		//https://tinyurl.com/dynamic-html-checker
 		document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
